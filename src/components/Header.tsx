@@ -6,7 +6,6 @@ import { RootState } from '../Redux/store';
 const Header:React.FC = () => {
   const { items } = useSelector((state:RootState) => state.cart);
   const sumCount =  items.reduce((sum:number, obj:any) => sum + obj.count, 0);
- 
 
   return (
     <header className="header">

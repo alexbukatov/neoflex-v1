@@ -58,23 +58,6 @@ h3 {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     gap: 30px;
-
-    &_block {
-    }
-
-    &_block-image {
-    }
-
-    &_block-info {
-    }
-
-    &_block-title {
-    }
-
-    &_block-buy {
-      &_rating {
-      }
-    }
   }
   &__headphones-wireless {
     margin-top: 28px;

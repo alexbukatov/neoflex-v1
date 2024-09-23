@@ -27,6 +27,7 @@ const FormPay:React.FC = () => {
         {items.map((obj) => {
               return <CartItem {...obj} key={obj.id} />;
         })}
+        <p>Сумма к оплате: {totalPrice} Руб.</p>
       </div>
       <div className={styles.container}>
         <form onSubmit={handleSubmit} className={styles.paymentForm}>

@@ -6,13 +6,20 @@
 }
 
 .products {
+  p {
+    margin-top: 10px;
+    color: rgb(28, 28, 39);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .paymentForm {
@@ -58,8 +65,5 @@ input {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
-  .container {
-    height: 100%;
   }
 }
