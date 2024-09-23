@@ -1,0 +1,132 @@
+@import 'nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import './components/all';
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a,
+button {
+  transition: 0.25s;
+  &:hover {
+    color: rgb(255, 165, 66);
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  background: rgb(234, 234, 234);
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 1 auto;
+  flex-grow: 2;
+}
+
+.header-categories {
+  color: rgb(131, 131, 131);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+h3 {
+  margin-top: 29px;
+  color: rgb(28, 28, 39);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.catalog {
+  &__headphones {
+    margin-top: 28px;
+  }
+
+  &__headphones-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+
+    &_block {
+    }
+
+    &_block-image {
+    }
+
+    &_block-info {
+    }
+
+    &_block-title {
+    }
+
+    &_block-buy {
+      &_rating {
+      }
+    }
+  }
+  &__headphones-wireless {
+    margin-top: 28px;
+  }
+  &__headphones-wireless-list {
+    margin-top: 24px;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+  }
+  @media (max-width: 1110px) {
+    &__headphones-list {
+      margin-top: 20px;
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+      gap: 30px;
+      li {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+    &__headphones-wireless-list {
+      margin-top: 20px;
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+      gap: 30px;
+      li {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+  @media (max-width: 730px) {
+    &__headphones-list {
+      margin-top: 20px;
+      display: grid;
+      grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+      gap: 30px;
+      li {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+    &__headphones-wireless-list {
+      margin-top: 20px;
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+      gap: 30px;
+      li {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+}

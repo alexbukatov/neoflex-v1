@@ -1,0 +1,27 @@
+
+[
+  {
+    "id":7,
+    "img": "assets/img/WirelessBlock/Apple AirPods.png",
+    "title": "Apple AirPods",
+    "price": 9527,
+    "rate": 4.7,
+    "count": 0
+  },
+  {
+    "id":8,
+    "img": "assets/img/WirelessBlock/GERLAX GH-04.png",
+    "title": "GERLAX GH-04",
+    "price": 6527,
+    "rate": 4.7,
+    "count": 0
+  },
+  {
+    "id":9,
+    "img": "assets/img/WirelessBlock/BOROFONE BO4.png",
+    "title": "BOROFONE BO4",
+    "price": 7527,
+    "rate": 4.7,
+    "count": 0
+  }
+]
